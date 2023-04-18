@@ -1,26 +1,13 @@
 # MoCHy-with-3h-motif
 Source code for the paper Hypergraph motifs and their extensions beyond binary, Geon Lee, Seokbum Yoon, Jihoon Ko, Hyunju Kim, Kijung Shin, VLDBJ.
 
-This work is an extended version of [Hypergraph Motifs: Concepts, Algorithms, and Discoveries](https://arxiv.org/abs/2003.01853).
+This work is an extended version of [Hypergraph Motifs: Concepts, Algorithms, and Discoveries](https://arxiv.org/abs/2003.01853), [VLDB 2020](https://vldb2020.org/).
 
-https://github.com/geon0325/MoCHy
+We additionaly propose **Ternary Hypergraph Motifs (3h-motifs)**, which are extensions of h-motifs beyond binary.  
 
-We propose **Hypergraph Motifs (h-motifs)**, whose occurrences capture local structural patterns of real-world hypergraphs.
+While h-motifs consider only on the emptiness of seven subsets derived from intersections among three hyperedges, 3h-motifs further differntiate patterns based on the cardinality of these subsets. 
 
-**H-motifs** describe connectivity patterns of three connected hyperedges with the following properties:
-* *Exhaustive*: h-motifs capture connectivity patterns of all possible three connected hyperedges
-* *Unique*: connectivity pattern of any three connected hyperedges is captured by exactly one h-motif
-* *Size Independent*: h-motifs capture connectivity patterns independently of the sizes of hyperedges
-
-**MoCHy** (**Mo**tif **C**ounting in **Hy**pergraphs) is a family of parallel algorithms for counting hypergraph motifs' instances.
-* *MoCHy-E (MoCHy Exact)* exactly counts the instances of each h-motif.
-* *MoCHy-A (MoCHy Approximate)*: approximately counts the instances of each h-motif.
-* The advanced approximated version *MoCHy-A+* is up to 25X more accurate than *MoCHy-A*, and it is up to 32X faster than *MoCHy-E*.
-
-## Datasets
-* The sample dataset is available [here](https://gist.github.com/pszufe/02666497d2c138d1b2de5b7f67784d2b#sec_dblp).
-* The real-world datasets used in the paper are available [here](https://www.cs.cornell.edu/~arb/data/) or [here](http://dmlab.kaist.ac.kr/hmotif/).
-* In the paper, we used datasets with unique hyperedges, where duplicated hyperedges are removed. 
+We add source codes for counting 3h-motifs to https://github.com/geon0325/MoCHy, please refer this link for information of h-motifs, MoCHy and datasets. 
 
 ## Input & Output Format
 * The input format should be lines of hyperedges, where each line represents the nodes contained in each hyperedge.
@@ -33,10 +20,16 @@ We propose **Hypergraph Motifs (h-motifs)**, whose occurrences capture local str
 ```
 * The output of the code will be:
 ```
-motif 1: 123
-motif 2: 22
+h-motif 1: 123
+h-motif 2: 22
 ...
-motif 26: 31
+h-motif 26: 31
+```
+```
+3h-motif 1: 12
+3h-motif 2: 7
+...
+3h-motif 431: 2
 ```
 
 ## Running Demo
@@ -49,16 +42,16 @@ You can run demo with the sample dataset (dblp_graph.txt).
 6. To run *memory-bounded* **MoCHy-A+**, type 'run_approx_ver2_memory.sh'.
 
 ## Terms and Conditions
-If you use this code as part of any published research, please acknowledge our VLDB 2020 paper.
+If you use this code as part of any published research, please acknowledge our VLDBJ paper.
 ```
-@article{lee2020hypergraph,
-  title={Hypergraph Motifs: Concepts, Algorithms, and Discoveries},
-  author={Lee, Geon and Ko, Jihoon and Shin, Kijung},
-  journal={Proceedings of the VLDB Endowment},
-  year={2020},
-  publisher={VLDB Endowment}
+@article{,
+  title={Hypergraph motifs and their extensions beyond binary},
+  author={Lee, Geon and Yoon, Seokbum and Ko, Jihoon and Kim, Hyunju and Shin, Kijung},
+  journal={},
+  year={2023},
+  publisher={}
 }
 ```
 
 ## Contact Information
-If you have any questions, please contact [Geon Lee](geonlee0325@kaist.ac.kr).
+If you have any questions, please contact [Seokbum Yoon](jing9044@kaist.ac.kr).
