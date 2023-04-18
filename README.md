@@ -1,5 +1,9 @@
 # MoCHy-with-3h-motif
-Source code forthe paper Hypergraph motifs and their extensions beyond binary, Geon Lee, Seokbum Yoon, Jihoon Ko, Hyunju Kim, Kijung Shin, VLDBJ.
+Source code for the paper Hypergraph motifs and their extensions beyond binary, Geon Lee, Seokbum Yoon, Jihoon Ko, Hyunju Kim, Kijung Shin, VLDBJ.
+
+This work is an extended version of [Hypergraph Motifs: Concepts, Algorithms, and Discoveries](https://arxiv.org/abs/2003.01853).
+
+https://github.com/geon0325/MoCHy
 
 We propose **Hypergraph Motifs (h-motifs)**, whose occurrences capture local structural patterns of real-world hypergraphs.
 
