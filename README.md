@@ -29,7 +29,7 @@ h-motif 26: 31
 ```
 3h-motif 1: 12
 3h-motif 2: 7
-```
+...
 3h-motif 431: 2
 ```
 
