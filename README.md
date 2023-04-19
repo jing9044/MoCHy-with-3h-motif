@@ -22,7 +22,7 @@ We add only source codes for counting 3h-motifs to https://github.com/geon0325/M
 ```
 h-motif 1: 123
 h-motif 2: 22
-```
+...
 h-motif 26: 31
 ```
 * If you type "ab1" as argument then the output of the code will be counts of 3h-motifs:
