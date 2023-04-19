@@ -7,7 +7,12 @@ We additionaly propose **Ternary Hypergraph Motifs (3h-motifs)**, which are exte
 
 While h-motifs consider only on the emptiness of seven subsets derived from intersections among three hyperedges, 3h-motifs further differntiate patterns based on the cardinality of these subsets. 
 
-We add only source codes for counting 3h-motifs to https://github.com/geon0325/MoCHy. Please refer this link for information of h-motifs, MoCHy, and datasets. 
+We add only source codes for counting 3h-motifs to https://github.com/geon0325/MoCHy. Please refer this link for information of h-motifs and MoCHy.
+
+## Datasets
+* The sample dataset is available [here](https://gist.github.com/pszufe/02666497d2c138d1b2de5b7f67784d2b#sec_dblp).
+* The real-world datasets used in the paper are available [here](https://www.cs.cornell.edu/~arb/data/) or [here](http://dmlab.kaist.ac.kr/hmotif/).
+* In the paper, we used datasets with unique hyperedges, where duplicated hyperedges are removed. 
 
 ## Input & Output Format
 * The input format should be lines of hyperedges, where each line represents the nodes contained in each hyperedge.
