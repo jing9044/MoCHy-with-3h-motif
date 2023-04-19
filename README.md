@@ -18,17 +18,18 @@ We add only source codes for counting 3h-motifs to https://github.com/geon0325/M
 2,3
 1,3,4,5
 ```
-* The output of the code will be:
+* If you type "none" for argument then the output of the code will be counts of h-motifs:
 ```
 h-motif 1: 123
 h-motif 2: 22
-...
+```
 h-motif 26: 31
 ```
+* If you type "ab1" for argument then the output of the code will be counts of 3h-motifs:
 ```
 3h-motif 1: 12
 3h-motif 2: 7
-...
+```
 3h-motif 431: 2
 ```
 
